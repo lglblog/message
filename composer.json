@@ -2,7 +2,7 @@
     "name": "lanehub/message",
     "description": "瓴里消息",
     "type": "library",
-    "url": "",
+    "url": "https://github.com/lglblog/message.git",
     "require": {
         "php": ">=7.0",
         "ext-curl": ">=7.0",
@@ -24,7 +24,7 @@
                 "Lanehub\\LanehubMessageServiceProvider"
             ],
             "aliases": {
-                "TraceLog": "Lanehub\\LanehubMessage\\Facades\\LanehubMessage"
+                "LanehubMessage": "Lanehub\\LanehubMessage\\Facades\\LanehubMessage"
             }
         }
     }
