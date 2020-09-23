@@ -2,6 +2,7 @@
     "name": "lanehub/message",
     "description": "瓴里消息",
     "type": "library",
+    "url": "",
     "require": {
         "php": ">=7.0",
         "ext-curl": ">=7.0",
@@ -16,5 +17,16 @@
         "psr-4": {
             "Lanehub\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lanehub\\LanehubMessageServiceProvider"
+            ],
+            "aliases": {
+                "TraceLog": "Lanehub\\LanehubMessage\\Facades\\LanehubMessage"
+            }
+        }
     }
+
 }
