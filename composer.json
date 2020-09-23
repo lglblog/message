@@ -1,0 +1,20 @@
+{
+    "name": "lanehub/message",
+    "description": "瓴里消息",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "ext-curl": ">=7.0",
+        "ext-iconv": ">=7.0"
+    },
+    "require-dev": {
+        "php": ">=7.0"
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Lanehub\\": "src/"
+        }
+    }
+}
