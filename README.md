@@ -14,5 +14,5 @@ $  composer require lanehub/message
 ```bash
   php artisan vendor:publish --provider="Lanehub\LanehubMessageServiceProvider"
 
-  cp vendor/lanehub/message/config/message.php AppConfig/message.php
+  cp vendor/lanehub/message/config/message.php config/message.php
 ```

@@ -15,9 +15,14 @@ class LanehubMessage
         echo "构造方法";
     }
 
-    public function sendSingleSms()
+    public function getConfig($type){
+        $config=Config("message.".$type);
+        var_dump($config);
+    }
+    public function sendSingleSms($param)
     {
         echo "发送单条短信";
+        var_dump($param);
     }
 
     public function sendMoreSms()

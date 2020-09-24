@@ -16,10 +16,13 @@ class LanehubMessageServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/message.php' => base_path("AppConfig/message.php")
+            __DIR__ . '/../config/message.php' => base_path("config/message.php")
         ]);
     }
 
+    /**
+     * 注册服务
+     */
     public function register()
     {
         $this->mergeConfigFrom(__DIR__ . "/../config/message.php", 'message');
